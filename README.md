@@ -6,7 +6,7 @@ Projet de cour qui a pour but de développer un jeu Space Invaders en python
 
 ## Auteurs
 
-Noé PHILIPPE
+Noé PHILIPPE  
 Océane PEZENNEC
 
 ## Professeur
