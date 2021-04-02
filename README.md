@@ -1,6 +1,6 @@
 # Développement d'un Space Invaders en python
 
-Projet de cour qui a pour but de développer un jeu Space Invaders en python
+Projet de cours qui a pour but de développer un jeu Space Invaders en python
 
 **date de début :** 15/03/2021
 
