@@ -11,7 +11,7 @@ Océane PEZENNEC
 
 ## Professeur
 
-Catherine DEZAN
+Catherine DEZAN  
 Alain PLANTEC
 
 ## Contenu
