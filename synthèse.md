@@ -1,11 +1,11 @@
-Pezennec Océane
-Philippe Noé
+PEZENNEC Océane
+PHILIPPE Noé
+_Groupe 5_
+
+# Synthèse du jeu Space Invaders
 
 
-                      Synthèse du jeu Space Invaders
-
-
-La classe Bullet a pour objectif de créer les balles et leurs utilités via les fonctions : 
+La classe Bullet a pour objectif de créer les balles et leurs utilités via les fonctions :
 la fonction __init__ contient les variables contenues dans la classe.
 la fonction install_in() prend en paramètre le canva et le nom du joueur et en fonction de si c'est l'alien ou le joueur qui shoote, la forme du bullet change.
 la fonction image() prend en paramètre cls et retourne l'image de la balle.
@@ -24,8 +24,8 @@ la fonction fire() prend en paramètre un canva et si le nombre de bullets est i
 la fonction rm_bullet() permet de supprimer le bullet tiré de la liste
 la fonction defender_touche() permet de retirer une vie au joueur lorsqu'il se fait toucher et si il est touché 3, on appelle kill_defender.
 la fonction kill_defender() permet de supprimer le defender si il se fait tuer.
-        
- 
+
+
 
 la classe Alien permet de créer un alien et les fonctionnalités qui vont avec :
 la fonction get_image() reçoit le gif d'un alien qui va être stocké dans une variable et retourné.
@@ -46,8 +46,8 @@ la fonction animation_projectil() prend en paramètre canva et permet de faire l
 la fonction fire permet que si le nb de bullets est < au max de bulletsalors On crée une nouvelle bullet
 la fonction rm_bullet() supprime la bullet de la liste.
 la fonction get_width() retourne la longueur du canva.
-        
-        
+
+
 
 la classe shelter permet de (???):
 la classe Game réunit toutes les classes ci-dessus tel que :
@@ -85,4 +85,3 @@ la fonction play() lance le jeu.
 la fonction start() permet de commencer le jeu.
 la fonction scoreGame() prend en paramètre le nom du joueur et stocke le nom et le score dans un fichier.
 la fonction menu() permet d'afficher les scores et de pouvoir mettre au début son nom.
-        
