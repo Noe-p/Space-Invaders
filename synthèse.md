@@ -4,20 +4,31 @@ _Groupe 5_
 
 # Synthèse du jeu Space Invaders
 
-I. <a href="#spaceInvaders">SpaceInvaders()</a>  
-II. <a href="#game">Game()</a>  
-III. <a href="#defender">Defender()</a>  
-IV. <a href="#fleet">Fleet()</a>  
-V. <a href="#alien">Alien()</a>  
-VI. <a href="#bullet">Bullet()</a>  
-VII. <a href="#shelter">Shelter()</a>  
-VIII. <a href="#conclusion">Conclusion()</a>  
+**I. <a href="#intro">Introduction</a>**   
+**II. <a href="#spaceInvaders">SpaceInvaders()</a>**  
+**III. <a href="#game">Game()</a>**  
+**IV. <a href="#defender">Defender()</a>**  
+**V. <a href="#fleet">Fleet()</a>**  
+**VI. <a href="#alien">Alien()</a>**    
+**VII. <a href="#bullet">Bullet()</a>**    
+**VIII. <a href="#shelter">Shelter()</a>**   
+**IX. <a href="#conclusion">Conclusion()</a>**   
+
+
+<h1 id="intro">Introduction :</h1>
+
+Un projet qui a pour but de développer un Space Invaders en python. Le projet c'est bien déroulé dans l'ensemble. Nous avons eu un peu de mal à démarrer mais une fois les différentes class bien comprise tout s'est déroulé. On a terminé les trois étapes et on a rajouté quelques fonctionnalités :
+   - Les scores du menu affiche seulement les huit meilleurs scores et sont triés dans l'ordre croissant.
+   - Une image de laser pour les tires du defender.
+   - On peut redémarrer une partie sans quitter le jeu.
+   - Le jeu refuse un pseudo vide.
+   - Les tires des aliens changent de couleur quand ils changent d'état.
+   - Les aliens tirent plus au fur et à mesure de la partie.
+   - Des animations d'explosion pour les protections et le defender.  
 
 
 
-
-
-<h1 id="spaceInvaders"> Class SpaceInvaders() :</h1>
+<h1 id="spaceInvaders">Class SpaceInvaders() :</h1>
 
 _C'est la classe qui lance le jeu, crée une frame, crée le menu, et enregistre le joueur dans le fichier "point.json"._
 
@@ -319,4 +330,4 @@ On a également eu du mal à comprendre comment récupérer la position d'un ali
 
 Il reste seulement un petit bug sur jupyter lors de la fin d'une partie, il ne fait pas crasher le jeu mais il est tout de même présent. On n'a pas réussi à le résoudre mais on pense que c'est dû à certaines animations qui ne sont pas terminées alors que le jeu est fini.
 
-A l'avenir on pourrait rajouter une flotte qui descend en continu, avec des aliens différents. Rajouter des projectiles pour le defender s'il n'a pas été touché depuis longtemps ou encore rajouter du son.
+A l'avenir on pourrait rajouter grâce à une intelligence artificielle une flotte qui créer des aliens différents et qui descend en continu. Rajouter des projectiles pour le defender s'il n'a pas été touché depuis longtemps ou encore rajouter du son.
