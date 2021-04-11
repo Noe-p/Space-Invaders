@@ -1,8 +1,32 @@
-PEZENNEC Océane
-PHILIPPE Noé
-_Groupe 5_
+PEZENNEC Océane  
+PHILIPPE Noé  
+_Groupe 5_  
 
 # Synthèse du jeu Space Invaders
+
+## Class SpaceInvaders :
+
+C'est la class SpaceInvaders qui lance le jeu, créer le canvas, créer le menu, et enregistre le joueur dans le fichier "point.json".
+
+**\_\_def init\_\_ :**
+   - Créer le canvas, sans oublier ```self.root.resizable(0, 0)``` pour éviter qu'on puisse agrandir la fenêtre.
+   - Créer un deuxième canvas pour le menu
+
+**def play :**
+   - Lance le menu et ```self.root.mainloop()``` pour que la fenêtre reste ouverte
+
+**def menu :**
+   - Créer le menu avec :
+      - Titre
+      - Les huit meilleurs scores rangés dans l'ordre croissant. Il est compliqué de trier, en fonction des points, la liste de dictionnaire du fichier "resultat.json". L'astuce qu'on a trouvé, c'est lors de l'ajout d'un profil dans "resultat.json", il faut l'ajouter dans la liste en fonction de ses scores. Puis afficher les huit premiers éléments de la liste.
+      - Input pour le nombre
+      - Un bouton start qui pointe vers ```scoreGame()```
+
+**def
+
+
+
+
 
 
 La classe Bullet a pour objectif de créer les balles et leurs utilités via les fonctions :
