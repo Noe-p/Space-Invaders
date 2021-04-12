@@ -17,12 +17,12 @@ _Groupe 5_
 
 <h1 id="intro">Introduction :</h1>
 
-Un projet qui a pour but de développer un Space Invaders en python. Le projet c'est bien déroulé dans l'ensemble. Nous avons eu un peu de mal à démarrer mais une fois les différentes class bien comprise tout s'est déroulé. On a terminé les trois étapes et on a rajouté quelques fonctionnalités :
+Un projet qui a pour but de développer un Space Invaders en python. Le projet s'est bien déroulé dans l'ensemble. Nous avons eu un peu de mal à démarrer mais une fois les différentes classes bien comprises, tout s'est bien déroulé. On a terminé les trois étapes et on a rajouté quelques fonctionnalités :
    - Les scores du menu affiche seulement les huit meilleurs scores et sont triés dans l'ordre croissant.
-   - Une image de laser pour les tires du defender.
+   - Une image de laser pour les tirs du defender.
    - On peut redémarrer une partie sans quitter le jeu.
    - Le jeu refuse un pseudo vide.
-   - Les tires des aliens changent de couleur quand ils changent d'état.
+   - Les tirs des aliens changent de couleur quand ils changent d'état.
    - Les aliens tirent plus au fur et à mesure de la partie.
    - Des animations d'explosion pour les protections et le defender.  
 
@@ -142,10 +142,10 @@ _C'est la classe qui gère le defender, ses tirs, ses vies..._
 **def fire() :**  
    _Gère les tire du defender._
 
-   - Si la taille de la liste `fired_bullets` qui stocke les projectiles du defender est inférieure au tir maximum autorisé, on crée un nouveau projectile en appelant la class `Bullet()`.
+   - Si la taille de la liste `fired_bullets` qui stocke les projectiles du defender est inférieure au tir maximum autorisé, on crée un nouveau projectile en appelant la classe `Bullet()`.
 
 **def animation_projectil() :**
-   - Pour chaque projectile du defender, on appelle la fonction `move_in()` de la class `Bullet()`.
+   - Pour chaque projectile du defender, on appelle la fonction `move_in()` de la classe `Bullet()`.
 
 **def rm_bullet() :**  
    _Enlève le projectile donné en paramètre de la liste `fired_bullets`._
@@ -168,14 +168,14 @@ _C'est la classe qui gère le defender, ses tirs, ses vies..._
 
 <h1 id="fleet">Class Fleet() :</h1>
 
-_C'est la class qui gère la flotte d'aliens._
+_C'est la classe qui gère la flotte d'aliens._
 
 **def \_\_init\_\_() :**  
    _Définit la flotte : taille, le nombre d'aliens par lignes/colonnes, le nombre de tirs autorisés, si les aliens changent d'état..._
 
 **def install_in() :**
    - On se déplace comme dans un tableau pour crée un alien dans chaque "case".
-   - On appelle la fonction `img_alien_vivant()` de la class `Alien()` pour afficher la photo de alien.
+   - On appelle la fonction `img_alien_vivant()` de la classe `Alien()` pour afficher la photo de alien.
    - On ajoute l'alien de la liste `aliens_fleet` qui gère les aliens.
    - On met à jour les coordonnées en x et en y.
 
@@ -213,7 +213,7 @@ _C'est la class qui gère la flotte d'aliens._
    _Gère les tirs de la flotte._
 
    - Si on n'a pas dépassé le nombre de tirs autorisé :
-      - Si les aliens sont dans l'état "Angry", appelle la class `Bullet()` avec une couleur orange.
+      - Si les aliens sont dans l'état "Angry", appelle la classe `Bullet()` avec une couleur orange.
       - Sinon la couleur est le bleu.
 
 **def animation_projectil() :**
@@ -227,12 +227,12 @@ _C'est la class qui gère la flotte d'aliens._
 
 
 
-<h1 id="alien">Class Alien() :</h1>
+<h1 id="alien">Classe Alien() :</h1>
 
-   _C'est la class qui gère les aliens._
+   _C'est la classe qui gère les aliens._
 
 **def \_\_init\_\_() :**
-   - Comporte seulement l'id des aliens initialisé à "None" car C'est la class `Fleet()` qui gère le déplacement, les tires... des aliens.
+   - Comporte seulement l'id des aliens initialisé à "None" car C'est la classe `Fleet()` qui gère le déplacement, les tires... des aliens.
 
 **def get_image(), def get-deathImage(),  def get_imageAngry :**  
    _Différentes images des aliens._
@@ -288,7 +288,7 @@ _Crée et gère le déplacement des différents projectiles._
 
 <h1 id="shelter">Class Shelter()</h1>
 
-_C'est la class qui crée et gère les protections du defender._
+_C'est la classe qui crée et gère les protections du defender._
 
 **def \_\_init\_\_() :**  
    _Définit les protections : le nombre, combien de tirs elles supportent, leurs tailles..._
@@ -323,7 +323,7 @@ _C'est la class qui crée et gère les protections du defender._
 
 <h1 id="conclusion">Conclusion :</h1>
 
-Un projet très intéressant, nous n'avions jamais fait de python avant cette année. Le plus difficile est de comprendre comment les class interagissent entre elles.
+Un projet très intéressant, nous n'avions jamais fait de python avant cette année. Le plus difficile est de comprendre comment les classes interagissent entre elles.
 
 La partie sur l'affichage dans l'ordre croissant des points était assez compliqué, on a du chercher un peu pour trouver la <a href="#trie">solution</a>.
 On a également eu du mal à comprendre comment récupérer la position d'un alien depuis la flotte avec la fonction `x1, y1, x2, y2 = canvas.coords(...)`
